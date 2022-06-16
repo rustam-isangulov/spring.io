@@ -1,2 +1,2 @@
 # spring.io
-Spring tutorials.
+Spring tutorials and how to's.
