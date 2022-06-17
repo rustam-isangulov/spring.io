@@ -1,6 +1,7 @@
 import components.ComponentA;
 import config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import services.ServiceA;
 
 public class Main {
     public static void main(String... args) {
@@ -14,5 +15,13 @@ public class Main {
         // use components
         System.out.println(component1.getName());
         System.out.println(component2.getName());
+
+        System.out.println();
+
+        // access service bean in the context
+        var service = context.getBean(ServiceA.class);
+
+        // use the service object
+        service.process();
     }
 }
